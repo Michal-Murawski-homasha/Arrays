@@ -9,6 +9,7 @@ public class ArraySorting {
                 for (int j = 0; j < someNumbers.length - 1; j++) {
                     if (someNumbers[j] > someNumbers[j + 1]) {
                         int tmp = someNumbers[j + 1];
+                        someNumbers[j + 1] = someNumbers[j];
                         someNumbers[j] = tmp;
                 }
             }
