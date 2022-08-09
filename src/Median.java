@@ -13,14 +13,18 @@ public class Median {
                 }
             }
         }
-            /*int l = (someNumbers.length + 1) / 2;
-            int x = someNumbers[l - 1];
-            int y = someNumbers[l];
-            int sum = (x + y) / 2;*/
-            int l = someNumbers.length / 2;
-            int sum = someNumbers[l];
+        int lengthEven = (someNumbers.length + 1) / 2;
+        int x = someNumbers[lengthEven - 1];
+        int y = someNumbers[lengthEven];
+        int sumEven = (x + y) / 2;
+        int lengthOdd = someNumbers.length / 2;
+        int sumOdd = someNumbers[lengthOdd];
         System.out.println(Arrays.toString(someNumbers));
-//        System.out.println("x = " + x + ", y = " + y);
-        System.out.println(sum);
+        if (someNumbers.length % 2 == 0) {
+            System.out.println("x = " + x + ", y = " + y);
+            System.out.println(sumEven);
+        } else {
+            System.out.println(sumOdd);
+        }
     }
 }
