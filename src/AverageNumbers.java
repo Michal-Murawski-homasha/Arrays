@@ -9,5 +9,6 @@ public class AverageNumbers {
                 j += someNumbers[i];
         }
         System.out.println("Sum = " + j);
+        System.out.println("Average = " + j / someNumbers.length);
     }
 }
